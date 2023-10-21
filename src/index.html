@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <script>
+      fetch('/api.php')
+        .then(resp => {
+          resp.text()
+            .then(text => {
+              document.querySelector('body').innerHTML = text
+            })
+        })
+    </script>
+  </head>
+  <body></body>
+</html>
