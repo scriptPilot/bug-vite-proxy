@@ -25,3 +25,15 @@ When I run both with Docker, the frontend is accessible and the backend too, but
 1. Clone this repository
 2. Run `npm run dev:direct` >> will show "Hello PHP" in the browser
 3. Run `npm run dev:docker` >> will show an error in the logs
+
+## Solution
+
+https://stackoverflow.com/questions/74281247/api-call-not-reaching-vite-proxy-target-localhost5000
+
+Use the PHP Docker image and internal port as target.
+
+```json
+{
+  "/api.php": "http://php:80"
+}
+```
