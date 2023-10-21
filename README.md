@@ -1,5 +1,7 @@
 # Vite proxy does not work in Docker environment
 
+Issue: https://github.com/vitejs/vite/issues/14719
+
 I would like to run both, backend and frontend in Docker.
 
 Backend is running in `php:apache` container, exposing `/api.php` at `localhost:8000`.
