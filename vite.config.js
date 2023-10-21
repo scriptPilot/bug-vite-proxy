@@ -2,7 +2,7 @@ export default {
   root: './src',
   server: {
     proxy: {
-      '/api.php': 'http://localhost:8000'
+      '/api.php': 'http://php:80'
     }
   }
 }
